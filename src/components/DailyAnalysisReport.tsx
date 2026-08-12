@@ -62,9 +62,9 @@ export const DailyAnalysisReport: React.FC<DailyAnalysisReportProps> = ({
           },
           sampleRecords: records.slice(0, 10)
         }),
-      });
+      }).catch(() => null);
 
-      if (res.ok) {
+      if (res && res.ok) {
         const data = await res.json();
         setAiAnalysis(data.report || data.summary);
       } else {

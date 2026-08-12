@@ -394,7 +394,7 @@ export const DailyAttendanceReportMfgView: React.FC<Props> = ({ onExport, onSend
                 {visibleCategories.foreignWorker && <th className="px-2 py-1.5 min-w-[65px] bg-[#f8fafc] border-r border-b border-slate-300">外籍移工</th>}
                 {visibleCategories.internStudent && <th className="px-2 py-1.5 min-w-[65px] bg-[#f8fafc] border-r border-b border-slate-300">實習工讀</th>}
                 {visibleCategories.dispatchWorker && <th className="px-2 py-1.5 min-w-[50px] bg-[#f8fafc] border-r border-b border-slate-300">派遣</th>}
-                <th className="px-2 py-1.5 min-w-[55px] font-bold text-rose-600 bg-[#e2e8f0] border-r border-b border-slate-300">總人數</th>
+                <th className="px-2 py-1.5 min-w-[55px] font-bold bg-[#e2e8f0] border-r border-b border-slate-300">總人數</th>
 
                 {/* 應到人數 Sub-columns */}
                 {visibleCategories.indirectRegular && <th className="px-2 py-1.5 min-w-[65px] bg-[#f8fafc] border-r border-b border-slate-300">間接正職</th>}
@@ -402,7 +402,7 @@ export const DailyAttendanceReportMfgView: React.FC<Props> = ({ onExport, onSend
                 {visibleCategories.foreignWorker && <th className="px-2 py-1.5 min-w-[65px] bg-[#f8fafc] border-r border-b border-slate-300">外籍移工</th>}
                 {visibleCategories.internStudent && <th className="px-2 py-1.5 min-w-[65px] bg-[#f8fafc] border-r border-b border-slate-300">實習工讀</th>}
                 {visibleCategories.dispatchWorker && <th className="px-2 py-1.5 min-w-[50px] bg-[#f8fafc] border-r border-b border-slate-300">派遣</th>}
-                <th className="px-2 py-1.5 min-w-[55px] font-bold text-rose-600 bg-[#e2e8f0] border-r border-b border-slate-300">總人數</th>
+                <th className="px-2 py-1.5 min-w-[55px] font-bold bg-[#e2e8f0] border-r border-b border-slate-300">總人數</th>
 
                 {/* 實到人數 Sub-columns */}
                 {showAbsenceAndTrip && (
@@ -412,7 +412,7 @@ export const DailyAttendanceReportMfgView: React.FC<Props> = ({ onExport, onSend
                     {visibleCategories.foreignWorker && <th className="px-2 py-1.5 min-w-[65px] bg-[#f8fafc] border-r border-b border-slate-300">外籍移工</th>}
                     {visibleCategories.internStudent && <th className="px-2 py-1.5 min-w-[65px] bg-[#f8fafc] border-r border-b border-slate-300">實習工讀</th>}
                     {visibleCategories.dispatchWorker && <th className="px-2 py-1.5 min-w-[50px] bg-[#f8fafc] border-r border-b border-slate-300">派遣</th>}
-                    <th className="px-2 py-1.5 min-w-[55px] font-bold text-rose-600 bg-[#e2e8f0] border-r border-b border-slate-300">總人數</th>
+                    <th className="px-2 py-1.5 min-w-[55px] font-bold bg-[#e2e8f0] border-r border-b border-slate-300">總人數</th>
                   </>
                 )}
 
@@ -424,7 +424,7 @@ export const DailyAttendanceReportMfgView: React.FC<Props> = ({ onExport, onSend
                     {visibleCategories.foreignWorker && <th className="px-2 py-1.5 min-w-[65px] bg-[#f8fafc] border-r border-b border-slate-300">外籍移工</th>}
                     {visibleCategories.internStudent && <th className="px-2 py-1.5 min-w-[65px] bg-[#f8fafc] border-r border-b border-slate-300">實習工讀</th>}
                     {visibleCategories.dispatchWorker && <th className="px-2 py-1.5 min-w-[50px] bg-[#f8fafc] border-r border-b border-slate-300">派遣</th>}
-                    <th className="px-2 py-1.5 min-w-[55px] font-bold text-rose-600 bg-[#e2e8f0] border-r border-b border-slate-300">總人數</th>
+                    <th className="px-2 py-1.5 min-w-[55px] font-bold bg-[#e2e8f0] border-r border-b border-slate-300">總人數</th>
                   </>
                 )}
 
@@ -436,7 +436,7 @@ export const DailyAttendanceReportMfgView: React.FC<Props> = ({ onExport, onSend
                     {visibleCategories.foreignWorker && <th className="px-2 py-1.5 min-w-[65px] bg-[#f8fafc] border-r border-b border-slate-300">外籍移工</th>}
                     {visibleCategories.internStudent && <th className="px-2 py-1.5 min-w-[65px] bg-[#f8fafc] border-r border-b border-slate-300">實習工讀</th>}
                     {visibleCategories.dispatchWorker && <th className="px-2 py-1.5 min-w-[50px] bg-[#f8fafc] border-r border-b border-slate-300">派遣</th>}
-                    <th className="px-2 py-1.5 min-w-[55px] font-bold text-rose-600 bg-[#e2e8f0] border-r border-b border-slate-300">總人數</th>
+                    <th className="px-2 py-1.5 min-w-[55px] font-bold bg-[#e2e8f0] border-r border-b border-slate-300">總人數</th>
                   </>
                 )}
 
@@ -562,13 +562,15 @@ export const DailyAttendanceReportMfgView: React.FC<Props> = ({ onExport, onSend
                     {categorySpan ? (
                       <td
                         rowSpan={categorySpan}
-                        className="px-2 py-2 sticky left-0 z-10 bg-[#f8fafc] border-r border-b border-slate-200 shadow-r text-center align-middle font-bold"
+                        className={`px-2 py-2 sticky left-0 z-10 border-r border-b border-slate-200 shadow-r text-center align-middle ${
+                          row.category === 'ONLINE' ? 'bg-[#e6f8f0]' : 'bg-[#f8fafc]'
+                        }`}
                       >
                         <div
-                          className={`inline-block py-2 px-1 text-[11px] tracking-wider uppercase font-extrabold rounded-md ${
+                          className={`inline-block text-[11px] tracking-wider uppercase font-extrabold ${
                             row.category === 'ONLINE'
-                              ? 'text-emerald-600 bg-emerald-50 border border-emerald-200'
-                              : 'text-slate-700 bg-slate-100 border border-slate-200'
+                              ? 'text-[#00D492]'
+                              : 'text-[#334155]'
                           }`}
                           style={{ writingMode: 'vertical-lr' }}
                         >
