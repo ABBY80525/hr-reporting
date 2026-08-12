@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@layer base {
+  :root, body {
+    font-family: 'Google Sans Flex', 'Google Sans', 'Noto Sans TC', system-ui, -apple-system, sans-serif;
+  }
+
+  table, table th, table td, table tr {
+    font-family: 'Google Sans Flex', 'Google Sans', 'Noto Sans TC', system-ui, -apple-system, sans-serif !important;
+    font-size: 13px !important;
+  }
+
+  table .text-xs, 
+  table .text-2xs, 
+  table .text-\[10px\], 
+  table .text-\[11px\], 
+  table .text-\[12px\] {
+    font-size: 13px !important;
+  }
+}
+
+@layer utilities {
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+}

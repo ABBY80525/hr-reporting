@@ -1,0 +1,6 @@
+{
+  "name": "HR考勤報表系統",
+  "description": "自動統計員工出缺勤、每日出勤報表、在職員工明細與當日分析報告系統",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
