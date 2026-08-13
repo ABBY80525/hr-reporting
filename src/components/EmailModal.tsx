@@ -73,7 +73,7 @@ export const EmailModal: React.FC<EmailModalProps> = ({ isOpen, onClose, records
               - 名冊總人數：{records.length} 人<br />
               - 實際出勤率：{((records.filter(r => r.status === '在職').length / Math.max(1, records.length)) * 100).toFixed(1)}%<br />
               - 附件包含 22 項詳細欄位，格式為 .xlsx 報表檔。<br /><br />
-              HR REPORTING AUTOMATION (CESBG IT)
+              HR REPORTING AUTOMATION (ABBY)
             </div>
           </div>
 

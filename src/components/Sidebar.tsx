@@ -246,11 +246,11 @@ export const Sidebar: React.FC<SidebarProps> = ({ activeSubMenu, onSelectSubMenu
       <div className="p-3 border-t border-blue-500/30 text-center shrink-0">
         {!isCollapsed ? (
           <p className="text-xs text-blue-200 font-medium tracking-wide">
-            Powered by CESBG IT
+            Powered by ABBY
           </p>
         ) : (
           <p className="text-[10px] text-blue-200 font-bold">
-            CESBG
+            ABBY
           </p>
         )}
       </div>

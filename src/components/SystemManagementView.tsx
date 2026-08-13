@@ -36,7 +36,7 @@ export const SystemManagementView: React.FC<SystemManagementViewProps> = ({ titl
             <span>SSO 單一登入與稽核</span>
           </div>
           <p className="text-slate-500">
-            已整合 CESBG IT 企業級 SSO 身份驗證機制。登入使用者：孫小翠 (HR Admin)，所有導出與發送郵件行為皆留存 Operation Log。
+            已整合 ABBY 企業級 SSO 身份驗證機制。登入使用者：王大明 (HR Admin)，所有導出與發送郵件行為皆留存 Operation Log。
           </p>
         </div>
 
@@ -58,7 +58,7 @@ export const SystemManagementView: React.FC<SystemManagementViewProps> = ({ titl
         </h3>
         <div className="space-y-2">
           {[
-            { name: 'HR 考勤超級管理員 (HR_SUPER_ADMIN)', user: '孫小翠', dept: 'CESBG IT', scope: '全廠讀寫/導出/郵件觸發' },
+            { name: 'HR 考勤超級管理員 (HR_SUPER_ADMIN)', user: '王大明', dept: 'ABBY', scope: '全廠讀寫/導出/郵件觸發' },
             { name: '製造課別權限 (MFG_LESSON_LEADER)', user: '陳課長', dept: 'NVD生產製造1課', scope: '課內員工人事與打卡瀏覽' },
             { name: '品保QC組長 (QC_LEADER)', user: '許組長', dept: '品保QC檢驗課', scope: '單位缺勤明細與即時審核' },
           ].map((item, idx) => (

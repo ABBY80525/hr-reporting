@@ -71,13 +71,13 @@ export const Header: React.FC<HeaderProps> = ({ onHomeClick, activeSubMenu }) =>
           <div className="w-8 h-8 rounded-full bg-blue-100 border border-blue-200 flex items-center justify-center text-blue-600 font-bold text-xs shadow-2xs">
             <User className="w-4 h-4" />
           </div>
-          <span className="font-medium text-slate-700 text-sm">孫小翠</span>
+          <span className="font-medium text-slate-700 text-sm">王大明</span>
           <ChevronDown className="w-3.5 h-3.5 text-slate-400 group-hover:text-blue-600 transition-transform group-hover:rotate-180" />
 
           {/* User Profile Dropdown Menu */}
           <div className="absolute right-0 top-full mt-2 w-48 bg-white rounded-lg shadow-xl border border-slate-100 py-1 hidden group-hover:block z-50">
             <div className="px-4 py-2 border-b border-slate-100">
-              <p className="text-xs font-semibold text-slate-800">孫小翠 (CESBG IT)</p>
+              <p className="text-xs font-semibold text-slate-800">王大明 (ABBY)</p>
               <p className="text-[11px] text-slate-400">人事考勤管理員</p>
             </div>
             <button className="w-full text-left px-4 py-2 text-xs text-slate-600 hover:bg-blue-50 hover:text-blue-600">
