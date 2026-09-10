@@ -29,4 +29,34 @@
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
   }
+
+  @keyframes gradient-flow {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  .text-gradient-animated {
+    background: linear-gradient(90deg, #2B7FFF 0%, #00D492 50%, #2B7FFF 100%);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient-flow 4s ease-in-out infinite;
+  }
+
+  .btn-gradient-animated {
+    background: linear-gradient(135deg, #2B7FFF 0%, #00D492 50%, #2B7FFF 100%);
+    background-size: 200% 200%;
+    animation: gradient-flow 4s ease-in-out infinite;
+  }
+  .btn-gradient-animated:hover {
+    animation-duration: 2s;
+  }
 }

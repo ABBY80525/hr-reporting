@@ -30,6 +30,7 @@ export interface AttendanceRecord {
 export type MenuCategory = 'DASHBOARD' | '基礎配置' | '出勤報表' | '系統管理';
 
 export type SubMenuItem =
+  | '首頁'
   | 'DASHBOARD'
   // 基礎配置
   | '組織配置'

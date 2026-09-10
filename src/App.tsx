@@ -10,13 +10,14 @@ import { ExportModal } from './components/ExportModal';
 import { EmailModal } from './components/EmailModal';
 import { ConfigManagementView } from './components/ConfigManagementView';
 import { SystemManagementView } from './components/SystemManagementView';
+import { WelcomeView } from './components/WelcomeView';
 
 import { initialAttendanceRecords } from './data/mockData';
 import { SubMenuItem } from './types';
 import { Search, RotateCcw, Download, Mail } from 'lucide-react';
 
 export default function App() {
-  const [activeSubMenu, setActiveSubMenu] = useState<SubMenuItem>('每日出勤報表');
+  const [activeSubMenu, setActiveSubMenu] = useState<SubMenuItem>('首頁');
   
   // Search state
   const [searchTerm, setSearchTerm] = useState('');
@@ -71,7 +72,7 @@ export default function App() {
     <div className="h-screen overflow-hidden bg-slate-50 flex flex-col text-slate-800 font-sans antialiased">
       {/* Top Header */}
       <Header
-        onHomeClick={() => setActiveSubMenu('每日出勤報表')}
+        onHomeClick={() => setActiveSubMenu('首頁')}
         activeSubMenu={activeSubMenu}
       />
 
@@ -84,8 +85,13 @@ export default function App() {
         />
 
         {/* Right Main Content */}
-        <main className="flex-1 p-5 min-h-0 flex flex-col min-w-0 overflow-hidden">
+        <main className={`flex-1 min-h-0 flex flex-col min-w-0 overflow-hidden ${activeSubMenu === '首頁' ? 'p-0' : 'p-5'}`}>
           
+          {/* WELCOME LANDING PAGE */}
+          {activeSubMenu === '首頁' && (
+            <WelcomeView onEnterSystem={(target) => setActiveSubMenu(target || '每日出勤報表')} />
+          )}
+
           {/* 0. DASHBOARD PAGE */}
           {activeSubMenu === 'DASHBOARD' && (
             <DashboardView onNavigate={(item) => setActiveSubMenu(item)} />

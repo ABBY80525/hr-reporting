@@ -55,10 +55,15 @@ export const Header: React.FC<HeaderProps> = ({ onHomeClick, activeSubMenu }) =>
       <div className="flex items-center space-x-5 text-sm text-slate-600">
         <button 
           onClick={onHomeClick}
-          className="p-1.5 hover:bg-slate-100 rounded-md transition-colors text-blue-600 flex items-center space-x-1"
+          className={`p-1.5 px-2.5 rounded-lg transition-colors flex items-center space-x-1.5 cursor-pointer ${
+            activeSubMenu === '首頁' 
+              ? 'bg-blue-50 text-blue-700 font-bold border border-blue-200 shadow-2xs' 
+              : 'hover:bg-slate-100 text-slate-600 hover:text-blue-600'
+          }`}
           title="回首頁"
         >
           <Home className="w-4 h-4" />
+          <span className="text-xs font-semibold">首頁</span>
         </button>
 
         <span className="text-slate-300">|</span>

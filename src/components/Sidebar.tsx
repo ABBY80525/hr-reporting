@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { 
+  Home,
   BarChart3, 
   Sliders, 
   ClipboardList, 
@@ -81,6 +82,24 @@ export const Sidebar: React.FC<SidebarProps> = ({ activeSubMenu, onSelectSubMenu
       {/* Navigation List */}
       <div className="py-4 px-2.5 space-y-2 overflow-y-auto flex-1 min-h-0 no-scrollbar [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
         
+        {/* 首頁 Welcome Page Link */}
+        <button
+          onClick={() => {
+            onSelectSubMenu('首頁');
+          }}
+          title="系統首頁"
+          className={`w-full flex items-center ${
+            isCollapsed ? 'justify-center px-0' : 'space-x-3 px-4'
+          } py-2.5 rounded-xl transition-colors text-base font-bold tracking-wide cursor-pointer ${
+            activeSubMenu === '首頁'
+              ? 'bg-white text-blue-700 shadow-md'
+              : 'hover:bg-blue-700/80 text-white'
+          }`}
+        >
+          <Home className={`w-5 h-5 shrink-0 ${activeSubMenu === '首頁' ? 'text-blue-600' : 'text-blue-200'}`} />
+          {!isCollapsed && <span>系統首頁</span>}
+        </button>
+
         {/* DASHBOARD Link */}
         <button
           onClick={() => {
